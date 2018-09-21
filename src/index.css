@@ -1,0 +1,115 @@
+body {
+  background-color: rgba(0, 87, 255, 0.5);
+  margin: 0;
+  padding: 0;
+
+  position:relative;
+
+  min-height: 400px;
+  height: 100%;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  font-family:   Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+  font-family: monospace;
+  color: white;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 20vh;
+}
+
+.Calculator{
+  border: 5px black solid;
+  background-color: black;
+
+  width: 296px;
+  height: 400px;
+
+  /*Centering container horizontally*/
+  margin: auto;
+}
+
+/***Digital Font imported from somewhere for digital look...***/
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('https://www.dafont.com/digital-7.font');
+}
+
+/***Memory Styling***/
+.memory{
+  height: 20px;
+  color: orange;
+
+  font-size: 18px;
+  text-align: right;
+
+  font-family: 'Changa', sans-serif;
+}
+
+/***Current Value Styling***/
+.current{
+  height: 55px;
+  color: white;
+
+  font-size: 38px;
+  text-align: right;
+
+  font-family: 'Changa', sans-serif;
+}
+
+
+button{
+  height: 64px;
+  width: 74px;
+
+  margin: 0;
+  color: white;
+  background-color: rgba(111, 109, 109, 0.5);
+
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  font-size: 20px;
+  border-color: black;
+
+}
+
+button:hover{
+  border: 2px solid rgb(173, 173, 173);
+  color: black;
+}
+
+button:focus{
+  outline: none;
+}
+
+
+.signs{
+  background-color: rgba(161, 161, 161, 0.5);
+}
+
+/***Special Button Styling***/
+#AC{
+  width: 148px;
+  background-color: red;
+
+  margin-top: 0;
+}
+
+#equal{
+  height: 128px;
+
+  /*To allow equal sign to be isolated by itself on the right*/
+  float: right;
+  background-color: rgb(36, 78, 205);
+}
+
+#zero{
+  width: 148px;
+}
