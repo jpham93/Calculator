@@ -1,115 +1,72 @@
 body {
-  background-color: rgba(0, 87, 255, 0.5);
-  margin: 0;
-  padding: 0;
-
-  position:relative;
-
-  min-height: 400px;
-  height: 100%;
-}
-
-.App{
-  display: flex;
-  flex-direction: column;
-  font-family:   Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.title{
-  font-family: monospace;
-  color: white;
+  background: #1287A5;
   text-align: center;
-
-  font-size: 25px;
-  font-weight: 200;
-  margin-top: 20vh;
+  color: white;
+  font-family: "Play", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Calculator{
-  border: 5px black solid;
-  background-color: black;
-
-  width: 296px;
-  height: 400px;
-
-  /*Centering container horizontally*/
+body #calculator {
+  background: #535C68;
   margin: auto;
+  border: 1px solid #535C68;
+  font-family: #45CE30;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.24);
+  height: 320px;
+  width: 230px;
 }
 
-/***Digital Font imported from somewhere for digital look...***/
-@font-face{
- font-family:'digital-clock-font';
- src: url('https://www.dafont.com/digital-7.font');
+body #expression {
+  padding: 4px;
+  text-align: end;
+  color: #45CE30;
+  font-family: "Orbitron", sans-serif;
 }
 
-/***Memory Styling***/
-.memory{
-  height: 20px;
-  color: orange;
+body #display {
+  padding-right: 5px;
+  height: 52px;
+  font-family: "Play", sans-serif;
+  text-align: end;
+}
 
+body button {
+  width: 57.5px;
+  height: 48.48485px;
+  border: 1px solid #535C68;
   font-size: 18px;
-  text-align: right;
-
-  font-family: 'Changa', sans-serif;
-}
-
-/***Current Value Styling***/
-.current{
-  height: 55px;
+  font-weight: lighter;
   color: white;
-
-  font-size: 38px;
-  text-align: right;
-
-  font-family: 'Changa', sans-serif;
 }
 
-
-button{
-  height: 64px;
-  width: 74px;
-
-  margin: 0;
-  color: white;
-  background-color: rgba(111, 109, 109, 0.5);
-
-  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-  font-size: 20px;
-  border-color: black;
-
-}
-
-button:hover{
-  border: 2px solid rgb(173, 173, 173);
-  color: black;
-}
-
-button:focus{
+body button:focus {
   outline: none;
 }
 
-
-.signs{
-  background-color: rgba(161, 161, 161, 0.5);
+body .numbers {
+  background: #A4B0BD;
 }
 
-/***Special Button Styling***/
-#AC{
-  width: 148px;
-  background-color: red;
-
-  margin-top: 0;
+body .operators {
+  background: #F3B431;
 }
 
-#equal{
-  height: 128px;
-
-  /*To allow equal sign to be isolated by itself on the right*/
-  float: right;
-  background-color: rgb(36, 78, 205);
+body .aux {
+  background: #777E8B;
 }
 
-#zero{
-  width: 148px;
+body #zero {
+  width: 115px;
 }
+/*# sourceMappingURL=index.css.map */

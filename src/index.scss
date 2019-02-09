@@ -1,0 +1,89 @@
+// COLORS //
+$background: #1287A5;
+$calc-color: #535C68;
+$aux-color: #777E8B;
+$num-color: #A4B0BD;
+$oper-color: #F3B431;
+
+// DIMENSIONS //
+$calc-height: 320px;
+$calc-width: 230px;
+$screen-height: 52px;
+
+// FONT STYLE //
+$button-size: 18px;
+$expr-color: #45CE30;
+$main-font: 'Play', sans-serif;
+$expr-font: 'Orbitron', sans-serif;
+
+body {
+    background: $background;
+    text-align: center;
+    color: white;
+    font-family: $main-font;
+    
+    // vertical alignment
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+    #calculator {
+        background: $calc-color;
+        margin: auto;
+        border: 1px solid #535C68;
+        font-family: $expr-color;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.24);
+
+        height: $calc-height;
+        width: $calc-width;
+    }
+
+    #expression {
+        padding: 4px;
+        text-align: end;
+
+        color: $expr-color;
+        font-family: $expr-font; 
+    }
+
+    #display {
+        padding-right: 5px;
+        height: $screen-height;
+
+        font-family: $main-font;
+        text-align: end;
+    }
+
+    button {
+        width: ($calc-width / 4);
+        height: ($calc-height / 6.6);
+        border: 1px solid #535C68; 
+        font-size: $button-size;
+        font-weight: lighter;
+
+        color: white;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .numbers {
+        background: $num-color;
+    }
+
+    .operators {
+        background: $oper-color;
+    }
+
+    .aux {
+        background: $aux-color; 
+    }
+
+    #zero {
+        width: ($calc-width / 4 * 2);
+    }
+
+}
